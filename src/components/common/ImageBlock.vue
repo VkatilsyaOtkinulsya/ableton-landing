@@ -36,13 +36,13 @@ export default {
   },
   computed: {
     hasColorBlock() {
-      return !!this.color || this.$slots['color-block-content']
+      return !!this.color || this.$slots['color-block-content'];
     },
     normalizedImages() {
-      return typeof this.images === 'string' ? [this.images] : this.images
+      return typeof this.images === 'string' ? [this.images] : this.images;
     },
   },
-}
+};
 </script>
 
 <style scoped lang="scss">

@@ -1,22 +1,29 @@
 <template>
   <div class="text-block">
-    <h1 class="text-block__title"><slot name="title"></slot></h1>
-    <p class="text-block__text"><slot name="text"></slot></p>
+    <slot class="special-title" name="special-title"></slot>
+    <h1 class="text-block__title">{{ title }}</h1>
+    <slot name="text" class="text-block__text"></slot>
   </div>
 </template>
 
 <script>
 export default {
+  mounted() {
+    if (this.$slots['special-title']) {
+      console.log('Слот special-title передан!');
+    }
+  },
   props: {
     title: String,
     text: String,
   },
-}
+};
 </script>
 
 <style scoped lang="scss">
 .text-block {
-  width: 50vw;
+  max-width: 800px;
+  height: 100vh;
   margin: 0 auto;
   margin-bottom: 8.3333vw;
   box-sizing: inherit;

@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Header from '@/components/layout/Header.vue'
-import Footer from '@/components/layout/Footer.vue'
-import HeroSection from '@/components/sections/HeroSection.vue'
-import ContentSection from '@/components/sections/ContentSection.vue'
+import Header from '@/components/layout/Header/Header.vue';
+import Footer from '@/components/layout/Footer.vue';
+import HeroSection from '@/components/sections/HeroSection.vue';
+import ContentSection from '@/components/sections/ContentSection.vue';
 
 export default {
   components: {
@@ -20,8 +20,7 @@ export default {
     HeroSection,
     ContentSection,
   },
-  data() {},
-}
+};
 </script>
 
 <style scoped>
