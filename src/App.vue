@@ -1,7 +1,11 @@
-<script setup></script>
+<script setup>
+import Home from '@/views/Home.vue'
+</script>
 
 <template>
-  <div class="app__container"></div>
+  <div>
+    <Home></Home>
+  </div>
 </template>
 
 <style scoped></style>

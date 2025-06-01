@@ -1,9 +1,7 @@
 <template>
-  <div>Header</div>
+  <div class="footer-wrapper">Footer</div>
 </template>
 
-<script lang="js">
-export default { name: 'Footer' }
-</script>
+<script></script>
 
 <style scoped></style>
